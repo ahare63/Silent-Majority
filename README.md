@@ -1,0 +1,21 @@
+<b> Silent Majority</b>
+
+
+<i>Clustering Facebook Friends by Political Alliance</i>
+
+
+<i>By Adam Hare</i>
+
+There has been talk since Richard Nixon of a "silent majority" of American voters who are not openly political. These are voters who make it to the polls, but don't brag about it or post about it on social media. To some extent, one could attribute the massive failures at predicting both Brexit and the results of the 2016 US Presidential election to this group.
+
+While coming up with an idea for a project using machine learning, I was inspired by some fellow Princeton student's work on PolitEcho (http://politecho.org or https://github.com/politecho/politecho). This is a Google Chrome extension that analyzes your Facebook friend's political allegiance by cross-referencing their page likes with a list of pages compiled by PolitEcho that indicate a political bias. Each friend is then designated as liberal or conservative with a confidence. Next, the extension looks at your newsfeed to see how often each friend posts links in an attempt to determine how much of your newsfeed is swayed by people posting in support of one political party or another. 
+
+I found this very interesting, but I noticed that only a fraction of my friends were appearing on the PolitEcho charts. Many of my close friends didn't have any likes that were in PolitEcho's list. I then became curious as to if I could try to identify the political allegiance of these people using their Facebook likes. The basic idea would be that some ostensibly apolitical likes would tend in reality to lean towards one end of the spectrum. Using political pages that were also liked by the person or another with similar likes I should be able to identify that bias. By looking at all of them and how they interacted, I would be able to make a judgment on how to identify that friend politically. This seemed to me to be a classic classification problem and so suited greatly for machine learning techniques.
+
+I have developed a Chrome extension that gathers raw Facebook likes for the user's friends and saves them as a few csv's. The inspiration for this and a few of the ideas for implementation borrow heavily on PolitEcho's open source code. In fact, this was my first time doing web development or working with JavaScript, so all of the project has been self taught by playing around with the PolitEcho code and looking at forums or documentation in the past week or so. My implementation differs significantly because I have different intentions and need to gather different data, but is influenced by PolitEcho's methods.
+
+The data is not included here in the interests of privacy, but the Chrome extension should work for anyone who is signed into Facebook on their Chrome browser and uses the extension. More specific directions are given in the Appendix of the included report.
+
+The data downloaded, I loaded it into Python, cleaned it, reformatted and filtered it, and ran a collaborative filtering method on it. The full details are included in the report. I also manually labelled each of my friends (just over 200) as either liberal or conservative. This is an area that will need to be automated, possibly by checking Facebook's own analysis of the user's political leaning included in their ad profile. Having determined the collaborative filtering hyperparameters, I ran the collaborative filter once and saved the data. I then used cross validation to determine the hyperparameters for my neural network to do the actual assignment of political leaning. I shuffled the data and tested it multiple times against the labels. Using both the collaborative filtering and the unfiltered data, I was unable to do much better than 50% accuracy on my dataset - essentially random. This result is disappointing, but I think it's mostly a function of my small dataset.
+
+For a brief summary of the methods used and results/confusion matrix, see the included PowerPoint called MLProjectPresentation.pptx. For a full and in depth report, see FinalReport.pdf. In the coming months, I hope to expand on this project, ideally by making it a fully contained Google Chrome application to be run on any user's profile and show them the results immediately. This faces many challenges, not the least of which is a computing time problem, but I will post updates here as they come along.

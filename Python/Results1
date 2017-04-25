@@ -1,0 +1,73 @@
+1 iteration
+('original', 'CC', 0.25)
+('original', 'CL', 0.21875)
+('original', 'LC', 0.1875)
+('original', 'LL', 0.34375)
+('original', 'Overall Accuracy', 0.59375)
+('filtered', 'CC', 0.15625)
+('filtered', 'CL', 0.03125)
+('filtered', 'LC', 0.28125)
+('filtered', 'LL', 0.53125)
+('filtered', 'Overall Accuracy', 0.6875)
+
+1 iteration
+('original', 'CC', 0.0625)
+('original', 'CL', 0.0625)
+('original', 'LC', 0.40625)
+('original', 'LL', 0.46875)
+('original', 'Overall Accuracy', 0.53125)
+('filtered', 'CC', 0.125)
+('filtered', 'CL', 0.09375)
+('filtered', 'LC', 0.34375)
+('filtered', 'LL', 0.4375)
+('filtered', 'Overall Accuracy', 0.5625)
+
+1 iteration
+('original', 'CC', 0.375)
+('original', 'CL', 0.21875)
+('original', 'LC', 0.125)
+('original', 'LL', 0.28125)
+('original', 'Overall Accuracy', 0.65625)
+('filtered', 'CC', 0.125)
+('filtered', 'CL', 0.125)
+('filtered', 'LC', 0.375)
+('filtered', 'LL', 0.375)
+('filtered', 'Overall Accuracy', 0.5)
+
+1 iteration
+('original', 'CC', 0.1875)
+('original', 'CL', 0.34375)
+('original', 'LC', 0.25)
+('original', 'LL', 0.21875)
+('original', 'Overall Accuracy', 0.40625)
+('filtered', 'CC', 0.15625)
+('filtered', 'CL', 0.1875)
+('filtered', 'LC', 0.28125)
+('filtered', 'LL', 0.375)
+('filtered', 'Overall Accuracy', 0.53125)
+
+for 100 runs:
+('Original Overall', 0.50875000000000004, 0.086159372676453502)
+('Original CC', 0.15875, 0.10575989906387012)
+('Original CL', 0.22375, 0.13590840205815091)
+('Original LC', 0.26750000000000002, 0.11770261785533914)
+('Original LL', 0.34999999999999998, 0.13484655631494635)
+
+('CF Overall', 0.54468749999999999, 0.094605988017408285)
+('CF CC', 0.1075, 0.071304803484758303)
+('CF CL', 0.1365625, 0.081088180203714028)
+('CF LC', 0.31874999999999998, 0.088167099872911797)
+('CF LL', 0.43718750000000001, 0.10784600928523042)
+
+for 300 runs:
+('Original Overall', 0.52512458471760792, 0.089399964567636436)
+('Original CC', 0.14368770764119601, 0.10503381664776154)
+('Original CL', 0.19352159468438537, 0.14050467720941806)
+('Original LC', 0.28135382059800662, 0.11644015820245893)
+('Original LL', 0.38143687707641194, 0.14804263943846879)
+
+('CF Overall', 0.53841362126245851, 0.087673037335265033)
+('CF CC', 0.10267857142857142, 0.066411757061775392)
+('CF CL', 0.13922342192691031, 0.078856511314301173)
+('CF LC', 0.32236295681063121, 0.085268635193344544)
+('CF LL', 0.43573504983388706, 0.10524490198785276)

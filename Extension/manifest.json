@@ -1,0 +1,20 @@
+{
+  "name": "Silent Majority",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Guess the political leaning of your Facebook friends.",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons":{
+  	  "128":"flag.png"
+  },
+  "background": {
+    "scripts": [
+      "getData.js",
+      "jquery-3.1.1.min.js"
+    ],
+    "persistent": true
+  },
+  "permissions": ["tabs", "https://*.facebook.com/*", "storage"]
+} 
